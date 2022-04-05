@@ -1,3 +1,4 @@
+
 server:
   port: 9090
 spring:
@@ -20,6 +21,7 @@ spring:
             - Path=/api/**
           filters:
             - RewritePath=/(?<path>.*), /$\{path}
+
 
 management:
   endpoint:
